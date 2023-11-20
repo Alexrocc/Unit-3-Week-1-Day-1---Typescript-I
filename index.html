@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+          sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      form > div {
+        margin-top: 1rem;
+      }
+      input {
+        min-width: 220px;
+        min-height: 30px;
+      }
+      button {
+        display: block;
+        margin-inline: auto;
+        margin-top: 2rem;
+        background-color: rgb(240, 223, 201);
+        padding: 1.5rem;
+        border-radius: 99%;
+        color: red;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 900;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Test your Luck!</h1>
+    <h3>Type a number from 1 to 100, and see who gets it right!</h3>
+    <form id="inputForm">
+      <div>
+        <input type="number" min="1" max="100" id="player1" required />
+        <label for="player1">Player 1</label>
+      </div>
+      <div>
+        <input type="number" min="1" max="100" id="player2" required />
+        <label for="player2">Player 2</label>
+      </div>
+      <button type="button" id="inputBtn">Submit</button>
+    </form>
+    <h4 id="extractedNumber"></h4>
+    <h4 id="betResult"></h4>
+    <script src="./script.js"></script>
+  </body>
+</html>
